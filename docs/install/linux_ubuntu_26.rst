@@ -14,7 +14,7 @@ QATrack+ on an Ubuntu 26.04 LTS server with Python 3.14, Apache
 2.4.66 as the web server. This installation uses django version 6.0.5.
 instructions should be similar on other Ubuntu systems. Similar steps will also
 likely work on other Linux distributions but those distributions are not
-officially supported or tested. this verisos was devloped by Maan Najem. If you would like to install the final version developed by 
+officially supported or tested. this version was developed by Maan Najem. If you would like to install the final version developed by 
 Randy Taylor, please follow:
 
 * :ref:`New Installation of QATrack+ v3.1.1 on Ubuntu Linux
@@ -299,7 +299,7 @@ Configuration of QATrack+
 Next we need to tell QATrack+ how to connect to our database and (optionally)
 set some configuration options for your installation.
 
-Create your `local_settings.py` file by copying the example from `deploy/{postgres|mysql}/local_settings.py`:
+Create your `local_settings.py` file or (copy your own) by copying the example from `deploy/{postgres|mysql}/local_settings.py`:
 
 .. code-block:: bash
 
@@ -308,6 +308,9 @@ Create your `local_settings.py` file by copying the example from `deploy/{postgr
 
     # mysql
     cp deploy/mysql/local_settings.py qatrack/local_settings.py
+
+    # Your own from previous version.
+    cp ~/local_settings_backup/local_settings.py qatrack/local_settings.py
 
 
 then open the file in a text editor.  There are many available settings and
