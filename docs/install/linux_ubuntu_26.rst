@@ -43,7 +43,7 @@ To dump your existing database, you can use the following command (run this from
 
     source ~/venvs/qatrack31/bin/activate # or similar to activate your existing qatrack virtualenv
     cd ~/web/qatrackplus # or similar to navigate to your existing qatrackplus folder
-    python manage.py dumpdata qatrack-dump.json
+    python manage.py dumpdata > qatrack-dump.json
 
 Navigate to your existing media folder and copy the contents to a safe location (e.g. ~/qatrack_media_backup):
 
